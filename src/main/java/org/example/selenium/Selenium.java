@@ -13,6 +13,9 @@ public class Selenium {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.google.com");
+        String title = driver.getTitle();
+        System.out.println("Page title is: " + title);
+        driver.quit();
 
     }
 
