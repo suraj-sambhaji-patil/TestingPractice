@@ -15,6 +15,9 @@ public class Selenium {
         driver.get("https://www.google.com");
         String title = driver.getTitle();
         System.out.println("Page title is: " + title);
+        String URL =driver.getTitle();
+        System.out.println("Page URL is: " + URL);
+
         driver.quit();
 
     }
